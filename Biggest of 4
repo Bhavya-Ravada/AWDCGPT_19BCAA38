@@ -1,0 +1,50 @@
+import java.util.Scanner;
+public class biggestof4 
+{
+   public static void main(String[] args) 
+   {
+      Scanner sc = new Scanner(System.in);
+      System.out.println("enter a value: ");
+      int a = sc.nextInt();
+      System.out.println("enter b value: ");
+      int b = sc.nextInt();
+      System.out.println("enter c value: ");
+      int c = sc.nextInt();
+      System.out.println("enter d value: ");
+      int d = sc.nextInt();
+      if(a > b)
+      {
+         if(a > c)
+         {
+            if(a > d)
+            {  
+               System.out.println("Largest of four numbers is: " + a);
+            }
+            else
+            {
+               System.out.println("Largest of four numbers is: " + d);
+            }
+         }
+      }
+      else if(b > c)
+      {
+         if(b > d)
+         {
+            System.out.println("Largest of four numbers is: " + b);
+         }
+         else
+         {
+            System.out.println("Largest of four numbers is: " + d);
+         }
+      }
+      else if(c > d)
+      {
+         System.out.println("biggest of four numbers is: " + c);
+      }
+      else
+      {
+         System.out.println("biggest of four numbers is: " + d);
+      }
+      
+   }
+}
