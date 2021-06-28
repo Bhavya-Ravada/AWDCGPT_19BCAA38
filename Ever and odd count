@@ -1,0 +1,32 @@
+import java.util.Scanner;
+{
+  public static void main(String[] args) 
+   {
+   	int n = 12345, e_count = 0, o_count = 0;
+   	
+	 Scanner in = new Scanner(System.in);  
+   
+   	while (n > 0)
+		{
+        		int rem = n % 10;
+        		if (rem % 2 == 0){
+         		e_count++;
+      		} 
+	else 			
+		{
+        
+	 		o_count++;
+      		}
+      		n = n / 10;
+   }
+   
+ 
+   if (e_count % 2 == 0 && o_count % 2 != 0)
+   {
+      System.out.println("Count of Even numbers : "+e_count);
+   } else
+   {
+      System.out.println(" Count of Odd numbers : "+o_count);
+   }
+   
+}
